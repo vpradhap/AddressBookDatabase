@@ -12,3 +12,6 @@ insert into Addressbook	values
 ('ram','kumar','mecheri','salem','tamilnadu',636401,9378946521,'ramkumar@gmail.com'),
 ('sunil','kumar','RS puram','coimbatore','tamilnadu',640215,6871212693,'sunilkumar@gmail.com'),
 ('naveen','mathiyalagan','chrompet','chennai','tamilnadu',636402,6984564523,'naveen@gmail.com')
+
+--UC4 Updating existing contact
+update Addressbook set lastname = 'prasad' where firstname = 'ram'
