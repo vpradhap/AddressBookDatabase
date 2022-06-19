@@ -15,3 +15,6 @@ insert into Addressbook	values
 
 --UC4 Updating existing contact
 update Addressbook set lastname = 'prasad' where firstname = 'ram'
+
+--UC5 Deleting contact
+delete Addressbook where firstname = 'ram'
