@@ -18,3 +18,9 @@ update Addressbook set lastname = 'prasad' where firstname = 'ram'
 
 --UC5 Deleting contact
 delete Addressbook where firstname = 'ram'
+
+--UC6 Retrieve data
+--By city
+select * from Addressbook where city = 'salem'
+--By state
+select * from Addressbook where state = 'tamilnadu'
