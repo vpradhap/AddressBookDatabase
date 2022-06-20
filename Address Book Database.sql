@@ -42,3 +42,8 @@ update Addressbook set bookname = 'one' ,type = 'friend' where firstname = 'ram'
 update Addressbook set bookname = 'two' ,type = 'family' where firstname = 'sunil'
 update Addressbook set bookname = 'three' ,type = 'profession' where firstname = 'naveen'
 
+--UC10 Count by type
+insert into Addressbook	values
+('sam','anish','kk nagar','chennai','tamilnadu',636401,9378946521,'samanish@gmail.com','one','friend')
+select count(type) as counting from Addressbook where type = 'friend'
+select count(type) as counting from Addressbook
