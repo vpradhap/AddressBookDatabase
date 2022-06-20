@@ -6,7 +6,6 @@ use AddressBookService
 create table Addressbook(firstname varchar(100),lastname varchar(100),address varchar(200),city varchar(100),state varchar(100),zip int,phone bigint,email varchar(100))
 select * from Addressbook
 
-
 --UC3 Inserting contacts
 insert into Addressbook	values
 ('pradhap','venkat','mettur','salem','tamilnadu',636402,9234567893,'pradhapvenkat@gmail.com'),
@@ -36,3 +35,10 @@ select count(state) from Addressbook where city = 'salem'
 insert into Addressbook	values
 ('ram','kumar','mecheri','salem','tamilnadu',636401,9378946521,'ramkumar@gmail.com')
 select * from Addressbook where city = 'salem' order by firstname
+
+--UC9 Alter
+alter table Addressbook add bookname varchar(100),type varchar(50)
+update Addressbook set bookname = 'one' ,type = 'friend' where firstname = 'ram'
+update Addressbook set bookname = 'two' ,type = 'family' where firstname = 'sunil'
+update Addressbook set bookname = 'three' ,type = 'profession' where firstname = 'naveen'
+
