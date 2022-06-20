@@ -47,3 +47,8 @@ insert into Addressbook	values
 ('sam','anish','kk nagar','chennai','tamilnadu',636401,9378946521,'samanish@gmail.com','one','friend')
 select count(type) as counting from Addressbook where type = 'friend'
 select count(type) as counting from Addressbook
+
+--UC11 Add same person as both friend and family
+insert into Addressbook	values
+('sam','anish','kk nagar','chennai','tamilnadu',636401,9378946521,'samanish@gmail.com','one','family')
+select * from Addressbook
