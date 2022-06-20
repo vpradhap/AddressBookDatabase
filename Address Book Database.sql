@@ -24,3 +24,9 @@ delete Addressbook where firstname = 'ram'
 select * from Addressbook where city = 'salem'
 --By state
 select * from Addressbook where state = 'tamilnadu'
+
+--UC7 Count data 
+--By city
+select count(city) as counting from Addressbook
+--By state
+select count(state) from Addressbook where city = 'salem'
